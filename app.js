@@ -72,18 +72,18 @@ function updateToolTip(chosenXAxis, circlesGroup) {
 
   var label;
 
-  if (chosenXAxis === "hair_length") {
-    label = "Hair Length:";
+  if (chosenXAxis === "obesity_pct") {
+    label = "Obesity Percentage:";
   }
   else {
-    label = "# of Albums:";
+    label = "Smoker Percentage:";
   }
 
   var toolTip = d3.tip()
     .attr("class", "tooltip")
     .offset([80, -60])
     .html(function(d) {
-      return (`${d.rockband}<br>${label} ${d[chosenXAxis]}`);
+      return (`${d.obesity}<br>${label} ${d[chosenXAxis]}`);
     });
 
   circlesGroup.call(toolTip);
