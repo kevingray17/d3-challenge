@@ -58,6 +58,26 @@ var y = d3.scaleLinear()
 svg.append("g")
   .call(d3.axisLeft(y));
 
+//y label
+
+svg.append("text")
+  .attr("text-anchor", "middle")
+  .attr("transform", "rotate(-90)")
+  .attr("x", (height / 2) * -1)
+  .attr("dy", (-40))
+  .text("Smokes (%)");
+
+//create dots variables
+
+var gdots = svg.selectAll("g.dot")
+  .data(data)
+  .enter()
+  .append("g");
+
+// add dots to gdots
+
+
+
 
 
 
