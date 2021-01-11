@@ -50,7 +50,7 @@ svg.append("text")
   .attr("y", height + 40)
   .text("Obesity (%)");
 
-//y axis
+// y axis
 
 var y = d3.scaleLinear()
   .domain(d3.extent(data, d => d.smokes))
@@ -58,7 +58,7 @@ var y = d3.scaleLinear()
 svg.append("g")
   .call(d3.axisLeft(y));
 
-//y label
+// y label
 
 svg.append("text")
   .attr("text-anchor", "middle")
@@ -67,7 +67,7 @@ svg.append("text")
   .attr("dy", (-40))
   .text("Smokes (%)");
 
-//create dots variables
+// create dots variables
 
 var gdots = svg.selectAll("g.dot")
   .data(data)
@@ -81,7 +81,7 @@ gdots.append("circle")
 .attr("r", 8)
 .style("fill", "#69b3a2");
 
-//add text to gdots
+// add text to gdots
 gdots.append("text")
   .text(d => d.abbr)
   .attr("x", d => x(d.obesity))
