@@ -72,11 +72,14 @@ svg.append("text")
 var gdots = svg.selectAll("g.dot")
   .data(data)
   .enter()
-  .append("g");
+  .append('g');
 
 // add dots to gdots
-
-
+gdots.append("circle")
+.attr("cx", d => x(d.obesity))
+.attr("cy", d => y(d.smokes))
+.attr("r", 8)
+.style("fill", "#69b3a2");
 
 
 
