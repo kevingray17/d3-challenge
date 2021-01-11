@@ -90,6 +90,11 @@ gdots.append("text")
   .attr("dy", 2)
   .style("font-size", "7px");
 
+//Catch error
+}).catch(e => {
+  console.log(e);
+});
+
 
 
 
