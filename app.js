@@ -26,7 +26,7 @@ var svg = d3
 
 // import csv data set 
 
-d3.csv("assets/data/data.csv").then(function(data) {
+d3.csv("data.csv").then(function(data) {
   data.forEach(d => {
     d.obesity = +d.obesity;
     d.smokes = +d.smokes;
