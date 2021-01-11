@@ -42,6 +42,23 @@ svg.append("g")
   .attr("transform", "translate(0," + height + ")")
   .call(d3.axisBottom(x));
 
+// x label
+
+svg.append("text")
+  .attr("text-anchor", "middle")
+  .attr("x", width / 2)
+  .attr("y", height + 40)
+  .text("Obesity (%)");
+
+//y axis
+
+var y = d3.scaleLinear()
+  .domain(d3.extent(data, d => d.smokes))
+  .range([0,height]);
+svg.append("g")
+  .call(d3.axisLeft(y));
+
+
 
 
 
