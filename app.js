@@ -1,26 +1,16 @@
-// set up chart 
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 30, bottom: 60, left: 60},
+    width = 600 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
-var svgWidth = 960;
-var svgHeight = 500;
-
-var margin = {
-    top: 20,
-    right: 40,
-    bottom: 60,
-    left: 50 
-};
-
-var width = svgWidth - margin.left - margin.right;
-var height = svgHeight - margin.top - margin.bottom;
-
-// Create an svg wrapper, append and svg group that will hold the chart
-// and shift the latter by the left and top margins
-
-var svg = d3
-    .select("body")
+// append the svg object to the body of the page
+var svg = d3.select("#scatter")
     .append("svg")
-    .attr("width", svgWidth)
-    .attr("height", svgHeight)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
 
 //**************************************************************
 
