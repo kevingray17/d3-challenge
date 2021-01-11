@@ -81,6 +81,15 @@ gdots.append("circle")
 .attr("r", 8)
 .style("fill", "#69b3a2");
 
+//add text to gdots
+gdots.append("text")
+  .text(d => d.abbr)
+  .attr("x", d => x(d.obesity))
+  .attr("y", d => y(d.smokes))
+  .attr("dx", -5)
+  .attr("dy", 2)
+  .style("font-size", "7px");
+
 
 
 
