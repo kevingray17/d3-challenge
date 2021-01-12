@@ -14,4 +14,4 @@ There were strong suggestions from the data that regional and cultural influence
 1. Does education level affect overall health?
 1. Is there a correlation between political leanings of a state and the level of healthiness in that state?
 
-                                                                                      ###
+                                                                             ###
