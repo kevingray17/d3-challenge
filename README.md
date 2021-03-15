@@ -1,7 +1,7 @@
 **d3 Challenge**
 
 **Hypothesis**
-Workng under the hypothesis that smokers generally don't live healthy lifestyles, I worked to determine whether a strong correlation existed between smokers and obesity. 
+Working under the hypothesis that smokers generally don't live healthy lifestyles, I worked to determine whether a strong correlation existed between smokers and obesity. 
 
 **Scope of Project**
 1. First, I acquired an extensive data set of health characteristics broken down by state that would be used to bolster or weaker the state hypothesis.
@@ -13,5 +13,7 @@ There were strong suggestions from the data that regional and cultural influence
 
 1. Does education level affect overall health?
 1. Is there a correlation between political leanings of a state and the level of healthiness in that state?
+
+The project was deployed using GitHub pages and can be viewed at 
 
                                                                 ###
