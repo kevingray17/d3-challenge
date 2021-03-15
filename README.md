@@ -1,4 +1,4 @@
-**d3 Challenge**
+## Smoking and Obesity - a correlation
 
 **Hypothesis**
 Working under the hypothesis that smokers generally don't live healthy lifestyles, I worked to determine whether a strong correlation existed between smokers and obesity. 
@@ -14,6 +14,6 @@ There were strong suggestions from the data that regional and cultural influence
 1. Does education level affect overall health?
 1. Is there a correlation between political leanings of a state and the level of healthiness in that state?
 
-The project was deployed using GitHub pages and can be viewed at 
+The project was deployed using GitHub pages and can be viewed at https://kevingray17.github.io/d3-challenge/
 
                                                                 ###
